@@ -21,6 +21,7 @@ const Formulario = () => {
       onSubmit={e => {
         e.preventDefault()
         buscarRecetas(busqueda)
+        //Cambio el estado de la consulta a "true" para que consulte a la API desde el Context
         guardarConsultar(true)
       }}
     >
